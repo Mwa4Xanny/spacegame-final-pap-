@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xGaMe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <canvas id="game-layout"></canvas>
+    
+    <div class="assets">
+        <img id="background" src="assets/images/background.png">
+        <img id="player-idle" src="assets/images/player-idle.png">
+        <img id="player-boost" src="assets/images/player-boost.png">
+        <img id="enemy-idle" src="assets/images/enemy-idle.png">
+        <img id="player-charge" src="assets/images/player-charge.png">
+        <img id="enemy-charge" src="assets/images/enemy-charge.png">
+        <img id="player-destroyed" src="assets/images/player-destroyed.png"> <!-- Imagem do jogador destruído -->
+        <audio id="charge" src="assets/sounds/charge.mp3"></audio> <!-- Elemento de áudio -->
+        <audio id="game-audio" src="assets/sounds/game-music.mp3" preload="auto" loop></audio>
+        <audio id="menu-audio" src="assets/sounds/menu-music.mp3" preload="auto" loop></audio>
+        <!-- Game sound effects -->
+        <audio id="laser-sound" src="assets/sounds/laser.mp3" preload="auto"></audio>
+        <audio id="explosion-sound" src="assets/sounds/explosion.mp3" preload="auto"></audio>
+        <audio id="boost-sound" src="assets/sounds/boost.mp3" preload="auto"></audio>
+        <audio id="hit-sound" src="assets/sounds/hit.mp3" preload="auto"></audio>
+        <audio id="menu-select" src="assets/sounds/select.mp3" preload="auto"></audio>
+        <audio id="menu-hover" src="assets/sounds/hover.mp3" preload="auto"></audio>
+        <audio id="game-over" src="assets/sounds/game-over.mp3" preload="auto"></audio>
+        <audio id="victory-sound" src="assets/sounds/victory.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="./js/audio.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/enemy.js"></script>
+    <script src="./js/enemyProjectile.js"></script>
+    <script src="./js/projectile.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
